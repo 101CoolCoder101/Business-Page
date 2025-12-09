@@ -1,2 +1,0 @@
-# Business-Page
-Business Layout
