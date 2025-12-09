@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Site</title>
+  <style>
+    .section { display: none; }
+    .section:target { display: block; }
+    /* Show Products by default */
+    #products { display: block; }
+  </style>
+</head>
 <body>
   <nav>
-    <button onclick="show('products')">Products</button>
-    <button onclick="show('about')">About</button>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
   </nav>
-  <div id="products">
+
+  <div id="products" class="section">
     <h2>Products</h2>
     <p>List of products here.</p>
   </div>
 
-  <div id="about" style="display:none;">
+  <div id="about" class="section">
     <h2>About</h2>
     <p>About us text here.</p>
   </div>
-
-  <script>
-    function show(id) {
-      document.getElementById('products').style.display = 'none';
-      document.getElementById('about').style.display = 'none';
-      document.getElementById(id).style.display = 'block';
-    }
-  </script>
 </body>
 </html>
