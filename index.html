@@ -93,6 +93,7 @@
   <body>
       <div id="home" style="margin-top:6rem;text-indent:-2rem">
     <h2>Home</h2>
+        <hr>
      <img src="newcopy.jpg" alt="candle pic" width="75%" height="700" class="yeah">
     <p>Home stuff</p>
     <p>More stuff.</p>
@@ -100,6 +101,7 @@
 
   <div id="about" style="display:none;margin-top:6rem;text-indent:-2rem">
     <h2>About</h2>
+    <hr>
     <p style="text-indent:0rem">Ranging from bookmarks and candles to jewellery and scrunchies, we sell all types of homemade items. We want customers to appreciate the exclusiveness of handmade craft.
 <br>
 <br>
@@ -128,11 +130,20 @@ Crescent and Co aims to create handmade products that bring satisfaction and del
     <p>Scrunchies, etc..</p>
   </div>
 </div>
+<script>
+         function showProduct(id) {
+    document.getElementById('candles').style.display = 'none';
+    document.getElementById('jewellery').style.display = 'none';
+    document.getElementById('scrunchies').style.display = 'none';
+    document.getElementById(id).style.display = 'block';
+  }
 
+  </script>
   </div>
 
           <div id="contacts" style="display:none;margin-top:6rem;">
     <h2>Contact Us</h2>
+            <hr>
     <p>List of contacts here.</p>
     <p>More stuff.</p>
   </div>
@@ -145,13 +156,6 @@ Crescent and Co aims to create handmade products that bring satisfaction and del
       document.getElementById('contacts').style.display = 'none';
 document.getElementById(id).style.display = 'block';
     }
-       function showProduct(id) {
-    document.getElementById('candles').style.display = 'none';
-    document.getElementById('jewellery').style.display = 'none';
-    document.getElementById('scrunchies').style.display = 'none';
-    document.getElementById(id).style.display = 'block';
-  }
-
   </script>
   </body>
 </html>
