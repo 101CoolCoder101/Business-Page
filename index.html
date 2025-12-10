@@ -106,8 +106,25 @@ Crescent and Co aims to create handmade products that bring satisfaction and del
 
       <div id="products" style="display:none;margin-top:6rem;">
     <h2>Products</h2>
-    <p>List of products here.</p>
-    <p>More stuff.</p>
+    <nav>
+    <button onclick="showProduct('candles')">Candles</button>
+    <button onclick="showProduct('jewellery')">Jewellery</button>
+    <button onclick="showProduct('scrunchies')">Scrunchies</button>
+  </nav>
+
+  <div id="candles">
+    <p>All about candles here.</p>
+  </div>
+
+  <div id="jewellery" style="display:none;">
+    <p>Jewellery details here.</p>
+  </div>
+
+  <div id="scrunchies" style="display:none;">
+    <p>Scrunchies info here.</p>
+  </div>
+</div>
+
   </div>
 
           <div id="contacts" style="display:none;margin-top:6rem;">
@@ -124,6 +141,13 @@ Crescent and Co aims to create handmade products that bring satisfaction and del
       document.getElementById('contacts').style.display = 'none';
 document.getElementById(id).style.display = 'block';
     }
+       function showProduct(id) {
+    document.getElementById('candles').style.display = 'none';
+    document.getElementById('jewellery').style.display = 'none';
+    document.getElementById('scrunchies').style.display = 'none';
+    document.getElementById(id).style.display = 'block';
+  }
+
   </script>
   </body>
 </html>
