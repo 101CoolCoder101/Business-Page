@@ -10,6 +10,7 @@
     }
     h2{
       font-size:50px;
+      text-align:Center;
     }
     header{
       background-image: url("background.jpg");
@@ -64,7 +65,7 @@
       <button onclick="show('home')">Home</button>
       <button onclick="show('about')">About</button>
        <button onclick="show('products')">Products</button>
-       <button onclick="show('contact')">Contact Us</button>
+       <button onclick="show('contacts')">Contact Us</button>
     </nav>
   </header>
   <body>
@@ -88,12 +89,19 @@
     <p>List of products here.</p>
     <p>More stuff.</p>
   </div>
+
+          <div id="contacts" style="display:none;margin-top:5rem;">
+    <h2>Contacts</h2>
+    <p>List of contacts here.</p>
+    <p>More stuff.</p>
+  </div>
     
     <script>
     function show(id) {
       document.getElementById('home').style.display = 'none';
       document.getElementById('about').style.display = 'none';
       document.getElementById('products').style.display = 'none';
+      document.getElementById('contacts').style.display = 'none';
 document.getElementById(id).style.display = 'block';
     }
   </script>
