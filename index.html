@@ -117,6 +117,8 @@ Crescent and Co aims to create handmade products that bring satisfaction and del
     <button onclick="showProduct('jewellery')">Jewellery</button>
     <button onclick="showProduct('scrunchies')">Scrunchies</button>
     <button onclick="showProduct('bookmarks')">Bookmarks</button>
+    <button onclick="showProduct('keyrings')">Keyrings</button>
+    <button onclick="showProduct('felt')">Felt Items</button>
   </nav>
 
   <div id="candles">
@@ -133,6 +135,13 @@ Crescent and Co aims to create handmade products that bring satisfaction and del
         
         <div id="bookmarks" style="display:none;">
     <p>Bookmark stuff</p>
+   </div>
+
+          <div id="keyrings" style="display:none;">
+    <p>Keyring text</p>
+  </div>
+         <div id="felt" style="display:none;">
+    <p>Stuff about felt</p>
   </div>
   </div>
 
@@ -156,6 +165,8 @@ document.getElementById(id).style.display = 'block';
     document.getElementById('jewellery').style.display = 'none';
     document.getElementById('scrunchies').style.display = 'none';
     document.getElementById('bookmarks').style.display = 'none';
+    document.getElementById('keyrings').style.display = 'none';
+    document.getElementById('felt').style.display = 'none';
     document.getElementById(id).style.display = 'block';
   }
   </script>
