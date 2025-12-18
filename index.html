@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Also Asi I'm gonna leave a bunch of comments around in case you're wondering about some stuff; 
-  (though you probably know most of the stuff anyway)
+(though you probably know most of the stuff anyway)
 If you want, once you've read them, you can delete them -->
-  <title>Business Page</title>
-  <style>
+<title>Business Page</title>
+<style>
     
         html{
             height: 100%;
             background-image: url("background.jpg");
             background-size: cover;
             background-position: center; 
-            }
+       }
 
       body{
         height:100%;
       }
     
-    /* This is for that golden line that goes under the title: */
+    /* This is for that golden line that goes under the titles: */
         
     hr{
             border-top: 2px solid #977c2b;
@@ -71,13 +71,13 @@ If you want, once you've read them, you can delete them -->
             font-size: 20px;
             margin:10px;
             cursor: pointer;
-    } 
+          } 
     
           nav button:hover {
             color:rgb(184, 51, 51);          
            }
     
-         #idk{
+         #logoID{
             float:left;
             position:fixed;
             top:0;
@@ -102,69 +102,72 @@ If you want, once you've read them, you can delete them -->
               -webkit-text-fill-color: transparent;
               text-align:center;
           }
+  
     h4{
       font-family:"unna",cambria;
       background: linear-gradient(to right, #000000,#c89116);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       font-size:50px;
       text-align:center;
-
+    }
+  
       h6{
         color: #977c2b;
         text-align:center;
         bottom:0;
     }
 
-   /* -- For phones... maybe you should change these stuff coz i dont get the phone much so idk how it looks */
-@media (max-width: 768px) {
-  header {
-    background-size: contain;
-    padding: 0.5rem 0;
-  }
+/* -- For phones... maybe you should change these stuff coz i dont get the phone much so idk how it looks */
+  @media (max-width: 768px) {
+    
+      header {
+        background-size: contain;
+        padding: 0.5rem 0;
+      }
+  
+      nav {
+        font-size: 16px;
+        padding: 0.5rem;
+      }
 
-  nav {
-    font-size: 16px;
-    padding: 0.5rem;
-  }
-
-  nav button {
-    font-size: 16px;
-    margin: 5px;
-  }
-
-  #idk {
-    position: static;
-    float: none;
-    display: block;
-    margin: 0 auto 10px auto;
-  }
-
-  h2 {
-    font-size: 40px;
-  }
-
-  h3 {
-    font-size: 35px;
-  }
-
-  h4 {
-    font-size: 28px;
-  }
-
-  p {
-    font-size: 20px;
-    padding: 1rem;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  #home, #about, #products, #contacts {
-    margin-top: 4rem !important;
-  }
+      nav button {
+        font-size: 16px;
+        margin: 5px;
+      }
+    
+      #logoID{
+        position: static;
+        float: none;
+        display: block;
+        margin: 0 auto 10px auto;
+      }
+    
+      h2 {
+        font-size: 40px;
+      }
+    
+      h3 {
+        font-size: 35px;
+      }
+    
+      h4 {
+        font-size: 28px;
+      }
+    
+      p {
+        font-size: 20px;
+        padding: 1rem;
+      }
+    
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    
+      #home, #about, #products, #contacts {
+        margin-top: 4rem !important;
+      }
 }
 
   </style>
@@ -195,7 +198,7 @@ If you want, once you've read them, you can delete them -->
   <header>
     <nav>
       <!-- Javascript alert!!! -->
-       <a href="https://101coolcoder101.github.io/Business-Page/"><img src="12logo.png" alt="logo" width="100" height="50" id="idk"></a>
+       <a href="https://101coolcoder101.github.io/Business-Page/"><img src="12logo.png" alt="logo" width="100" height="50" id="logoID"></a>
       <button onclick="show('home')">Home</button>
       <button onclick="show('about')">About</button>
        <button onclick="show('products')">Products</button>
