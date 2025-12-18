@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Also Asi I'm gonna leave a bunch of comments around in case you're wondering about some stuff; 
+  (though you probably know most of the stuff anyway)
+If you want, once you've read them, you can delete them -->
   <title>Business Page</title>
   <style>
     
@@ -13,7 +16,10 @@
       body{
         height:100%;
       }
-        hr{
+    
+    /* This is for that golden line that goes under the title: */
+        
+    hr{
             border-top: 2px solid #977c2b;
           }
     
@@ -110,7 +116,7 @@
         bottom:0;
     }
 
-   
+   /* -- For phones... maybe you should change these stuff coz i dont get the phone much so idk how it looks */
 @media (max-width: 768px) {
   header {
     background-size: contain;
@@ -162,10 +168,12 @@
 }
 
   </style>
+  <!-- the noscript thing sends a msg of javascript is off in somebody's browser. -->
   <noscript>
     <p>Not seeing anything? Some features may not work if JavaScript is disabled in your browser (for example, switching between subtabs). </p>
   </noscript>
   <head>
+    <!-- Ok, just ignore those below, they're imported fonts from Google-->
       <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Playwrite+US+Trad+Guides&display=swap" rel="stylesheet">
@@ -186,6 +194,7 @@
   
   <header>
     <nav>
+      <!-- Javascript alert!!! -->
        <a href="https://101coolcoder101.github.io/Business-Page/"><img src="12logo.png" alt="logo" width="100" height="50" id="idk"></a>
       <button onclick="show('home')">Home</button>
       <button onclick="show('about')">About</button>
@@ -201,14 +210,13 @@
           <img src= "newcopy.jpg" alt="candle pic" style="width:100%; height:auto; display:block; margin-left:auto; margin-right:auto;">
       </div>
     <p>Home stuff</p>
-    <p>More stuff.</p>
+    <p>More stuff. (You can laugh at these but for now they're just placeholders) </p>
   </div>
-
   <div id="about" style="display:none;margin-top:6rem;text-indent:-2rem">
     <h2 style="margin:0rem;">About</h2>
     <hr>
     <p style="text-indent:0rem">Ranging from bookmarks and candles to jewellery and scrunchies, we sell all types of homemade items. We want customers to appreciate the exclusiveness of handmade craft.
-<br>
+<br> <!-- this "br" thing is just to make the text go to a new line -->
 <br>
 Crescent and Co aims to create handmade products that bring satisfaction and delight to our customers.</p>
     <div style="max-width:200px; margin:0 auto; padding:1px;">
@@ -221,6 +229,7 @@ Crescent and Co aims to create handmade products that bring satisfaction and del
       <div id="products" style="display:none;margin-top:6rem;">
     <h2 style="margin:0rem">Products</h2>
     <hr>
+        <!-- ALERT! MORE JAVASCRIPT! -->
     <nav style="text-align:center;">
     <button onclick="showProduct('bookmarks')">Bookmarks</button>
     <button onclick="showProduct('candles')">Candles</button>
@@ -285,7 +294,7 @@ Crescent and Co aims to create handmade products that bring satisfaction and del
             <hr>
     <p> Any questions? Feel free to contact us at @gmail.com!</p>
   </div>
-    
+    <!-- ok, relax, this is the last bunch of javascript -->
     <script>
     function show(id) {
       document.getElementById('home').style.display = 'none';
